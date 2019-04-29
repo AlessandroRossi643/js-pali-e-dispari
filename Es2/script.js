@@ -1,8 +1,9 @@
 //Scelta utente: pari o dispari
 var paridispari=prompt("Scegli pari o dispari:");
+var paridisparim=paridispari.toUpperCase();
 
 //Validazione pari o dispari
-if (paridispari != "PARI" && paridispari != "DISPARI" ) {
+if (paridisparim != "PARI" && paridisparim != "DISPARI" ) {
   alert("Dato non valido");
 }
 //Scelta numero utente;
@@ -32,7 +33,7 @@ var modulo=somma%2;
 console.log(modulo);
 
 // Controllo se il numero è pari o dispari e risultato
-if (modulo==0 && paridispari==="PARI" || modulo!=0 && paridispari==="DISPARI") {
+if (modulo==0 && paridisparim==="PARI" || modulo!=0 && paridisparim==="DISPARI") {
   document.writeln("Complimenti, Hai vinto la partita!");
 }
 else {
